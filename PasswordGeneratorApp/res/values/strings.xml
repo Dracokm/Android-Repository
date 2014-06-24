@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">"Password Generator "</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="passwordLength"> <b>Please enter the password Length required: </b></string>
+    <string name="output_password"> <b><u>Password is:</u></b></string>
+	<string name="generateButtonText">Generate Password</string>
+	<string name="checkBoxCharsRemoved">Punctuation + Confusing Characters</string>
+</resources>

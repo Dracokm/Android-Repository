@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:scrollbars="vertical"
+    tools:context="com.draco.passwordgen.MainActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/pwdLengthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/section_label"
+        android:layout_centerHorizontal="true"
+        android:text="@string/passwordLength" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/generateButton"
+        android:layout_marginTop="63dp"
+        android:layout_toRightOf="@+id/section_label"
+        
+        android:text="@string/output_password" />
+
+    <CheckBox
+        android:id="@+id/chkbxRemoveStuff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/seek_bar"
+        android:layout_below="@+id/seek_bar"
+        android:layout_marginTop="62dp"
+        android:enabled="true"
+        android:text="@string/checkBoxCharsRemoved" />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pwdLengthTextView"
+        android:layout_below="@+id/section_label"
+        android:layout_marginTop="24dp"
+        android:max="17"
+        android:progress="0" />
+
+    <Button
+        android:id="@+id/generateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkbxRemoveStuff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/generateButtonText" />
+
+    <TextView
+        android:id="@+id/output_password_textview"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/generateButton"
+        android:layout_alignTop="@+id/TextView01"
+        android:background="@drawable/rect"
+        android:maxLines="100"
+        android:padding="3dp"
+        android:scrollbars="vertical"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/currentSeekBarProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/output_password_textview"
+        android:layout_below="@+id/seek_bar"
+        android:layout_marginTop="14dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="32sp" />
+
+</RelativeLayout>
